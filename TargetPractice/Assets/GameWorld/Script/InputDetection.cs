@@ -8,7 +8,7 @@ public class InputDetection : MonoBehaviour, I_SmartwallInteractable
 
     public void Hit(Vector3 pos) => StartCoroutine(Action());
 
-    private void OnMouseDown() => StartCoroutine(Action());
+    //private void OnMouseDown() => StartCoroutine(Action());
 
     IEnumerator Action()
     {

@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MapMovement : MonoBehaviour
+public class WorldMovement : MonoBehaviour
 {
-    public static MapMovement Instance;
+    public static WorldMovement Instance;
 
     Coroutine routine;
 
-    float moveSpeed = -0.06f;
+    float moveSpeed = 0.06f;
 
     private void Awake()
     {

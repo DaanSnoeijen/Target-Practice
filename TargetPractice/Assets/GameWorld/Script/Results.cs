@@ -30,7 +30,7 @@ public class Results : MonoBehaviour
     public void EndGame()
     {
         Spawner.Instance.StopGame();
-        MapMovement.Instance.StopMovement();
+        WorldMovement.Instance.StopMovement();
         endTime = Timer.Instance.StopTimer();
 
         StartCoroutine(FadeInPanel());
@@ -55,9 +55,10 @@ public class Results : MonoBehaviour
         }
 
         yield return new WaitForSeconds(1f);
+        ResultText.enabled = true;
         ResultText.text = "Survived " + endTime;
 
         yield return new WaitForSeconds(1f);
-        RestartButton.SetActive(true);
+        //RestartButton.SetActive(true);
     }
 }
